@@ -1,0 +1,2 @@
+1. Нужно поставить min-height для .wrapper в assets/css/null.css
+2. Разобраться с fontawesome

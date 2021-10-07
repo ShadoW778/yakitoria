@@ -16,10 +16,10 @@
     "nuxt": "latest"
   },
   "devDependencies": {
-    "@nuxtjs/eslint-config": "^5.0.0",
-    "@nuxtjs/eslint-module": "^3.0.2",
+    "@fortawesome/free-brands-svg-icons": "^5.15.4",
+    "@fortawesome/free-solid-svg-icons": "^5.15.4",
+    "@nuxtjs/fontawesome": "^1.1.2",
     "babel-eslint": "^10.1.0",
-    "eslint": "^7.20.0",
-    "eslint-plugin-nuxt": "^2.0.0"
+    "yarn": "^1.22.15"
   }
 }

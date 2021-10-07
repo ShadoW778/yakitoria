@@ -46,7 +46,11 @@ export default {
   */
   buildModules: [
     // Doc: https://github.com/nuxt-community/eslint-module
-    '@nuxtjs/eslint-module'
+    ['@nuxtjs/fontawesome', {
+      component: 'fa',
+      suffix: true,
+    }],
+    // '@nuxtjs/eslint-module'
   ],
 
   /*
@@ -77,5 +81,5 @@ export default {
   ** See https://nuxtjs.org/api/configuration-build/
   */
   build: {
-  }
+  },
 }
