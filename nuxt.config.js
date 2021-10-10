@@ -33,6 +33,7 @@ export default {
   ** https://nuxtjs.org/guide/plugins
   */
   plugins: [
+
   ],
 
   /*
@@ -46,13 +47,16 @@ export default {
   */
   buildModules: [
     // Doc: https://github.com/nuxt-community/eslint-module
-    ['@nuxtjs/fontawesome', {
-      component: 'fa',
-      suffix: true,
-    }],
+    '@nuxtjs/fontawesome'
     // '@nuxtjs/eslint-module'
   ],
-
+  fontawesome: {
+    component: 'fa',
+    icons: {
+      solid: true,
+      brands: true
+    }
+  },
   /*
   ** Nuxt.js modules
   */

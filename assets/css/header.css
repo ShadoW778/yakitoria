@@ -1,0 +1,28 @@
+.wrapper {
+  display: grid;
+  grid-template: minmax(100px, auto) 1fr minmax(200px, auto) / 1fr;
+  grid-template-areas:
+    "header"
+    "main"
+    "footer";
+}
+
+.header {
+  min-width: 100%;
+  height: 75px;
+  background-color: black;
+  display: block;
+}
+
+.header__nav {
+  display: grid;
+  padding: 0 20px;
+  align-items: center;
+  grid-auto-flow: column;
+  grid-template: 1fr / 100px minmax(auto, 400px) 1fr minmax(auto, 220px);
+  height: 75px;
+}
+
+.header__title {
+  color: white;
+}
