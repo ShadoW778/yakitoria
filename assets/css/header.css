@@ -12,6 +12,7 @@
   height: 75px;
   background-color: black;
   display: block;
+  color: white;
 }
 
 .header__nav {
@@ -23,6 +24,35 @@
   height: 75px;
 }
 
+.header__contacts {
+  display: flex;
+  justify-content: space-between;
+}
+
+.header__contacts_item {
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+.header__contacts_item:hover {
+  color: gray;
+}
+
+.header__getItem {
+  color: white;
+  background-color: red;
+  border: 2px solid rgb(214, 153, 153);
+  border-radius: 5px;
+  padding: 2px 4px;
+}
+
 .header__title {
   color: white;
+  display: flex;
+  justify-content: center;
+}
+
+.header__management {
+  display: flex;
+  justify-content: space-around;
 }

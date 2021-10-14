@@ -5,12 +5,25 @@
         <nav class="header__nav">
           <menu-btn></menu-btn>
           <ul class="header__contacts">
-            <li class="header__restaurants"></li>
-            <li class="header__contacts"></li>
-            <li class="header__getItem"></li>
+            <li class="header__restaurants header__contacts_item">
+              <span>Рестораны <fa icon="caret-down"></fa></span>
+            </li>
+            <li class="header__contacts header__contacts_item">
+              <span>Контакты <fa icon="caret-down"></fa></span>
+            </li>
+            <li class="header__getItem header__contacts_item">
+              <span>Заберу сам</span>
+            </li>
           </ul>
           <div class="header__title">Honolulu</div>
-          <div class="header__cart"><fa icon="shopping-basket"></fa>Cart</div>
+          <div class="header__management">
+            <div class="header__in">
+              <span><fa icon="sign-in-alt"></fa> Войти</span>
+            </div>
+            <div class="header__cart">
+              <span><fa icon="shopping-basket"></fa> Корзина</span>
+            </div>
+          </div>
         </nav>
       </div>
     </header>
