@@ -15,7 +15,12 @@
               <span>Заберу сам</span>
             </li>
           </ul>
-          <div class="header__title">Honolulu</div>
+          <div class="header__title">
+            <nuxt-link class="header__link" to="/test">
+              Honolulu
+              <img class="header__logo" src="../assets/img/sunset.jpg" alt="" />
+            </nuxt-link>
+          </div>
           <div class="header__management">
             <div class="header__in">
               <span><fa icon="sign-in-alt"></fa> Войти</span>
@@ -25,6 +30,7 @@
             </div>
           </div>
         </nav>
+        <main-menu></main-menu>
       </div>
     </header>
     <Nuxt></Nuxt>
@@ -33,15 +39,17 @@
 
 <script>
 import menuBtn from "../components/menu.vue";
+import mainMenu from "../components/main-menu.vue";
 export default {
   name: "headerComp",
   components: {
-    menuBtn
+    menuBtn,
+    mainMenu
   }
 };
 </script>
 
-<style scoped>
+<style>
 @import "../assets/css/null.css";
 @import "../assets/css/header.css";
 </style>

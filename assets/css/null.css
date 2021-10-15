@@ -8,6 +8,15 @@ body, html {
    min-height: 100%;
 }
 
+ul {
+   list-style: none;
+}
+
+a {
+   text-decoration: none;
+   color: inherit;
+}
+
 .wrapper {
    display: block;
    height: 100%;

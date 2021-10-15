@@ -1,3 +1,5 @@
+@import url('~/assets/css/components/_header-menu.css');
+
 .wrapper {
   display: grid;
   grid-template: minmax(100px, auto) 1fr minmax(200px, auto) / 1fr;
@@ -20,13 +22,14 @@
   padding: 0 20px;
   align-items: center;
   grid-auto-flow: column;
-  grid-template: 1fr / 100px minmax(auto, 400px) 1fr minmax(auto, 220px);
+  grid-template: 1fr / 100px minmax(auto, 320px) 1fr minmax(auto, 220px);
   height: 75px;
 }
 
 .header__contacts {
   display: flex;
   justify-content: space-between;
+  align-items: center;
 }
 
 .header__contacts_item {
@@ -36,6 +39,11 @@
 
 .header__contacts_item:hover {
   color: gray;
+}
+
+.header__contacts_item:last-child:hover {
+   color: inherit;
+   transform: scale(1.1);
 }
 
 .header__getItem {
@@ -48,11 +56,36 @@
 
 .header__title {
   color: white;
+  font-size: 32px;
   display: flex;
+  align-items: center;
   justify-content: center;
+  margin-right: 100px;
+}
+
+.header__link {
+   display: flex;
+   align-items: center; 
+}
+
+.header__logo {
+  max-width: 60px;
+  max-height: 60px;
+  margin-left: 12px;
 }
 
 .header__management {
   display: flex;
+  align-items: center;
   justify-content: space-around;
+}
+
+.header__management div {
+  cursor: pointer;
+  transition: all 0.2s ease 0s;
+}
+
+.header__management div:hover {
+   color: red;
+   transform: scale(1.05);
 }
