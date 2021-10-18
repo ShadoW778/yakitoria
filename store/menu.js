@@ -17,6 +17,5 @@ export const mutations = {
 export const actions = {
    changeMenu({ commit }, payload) {
       commit('CHANGE_MENU_CONDITION', payload)
-      console.log('hey')
    }
 }

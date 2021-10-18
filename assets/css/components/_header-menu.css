@@ -1,21 +1,29 @@
 
-.header__menu {
+.header__submenu {
    min-width: 100%;
    color: black;
+   transition: all 0.3s ease;
+   position: absolute;
+   top: -100px;
+   left: 0;
+ }
+
+ .opened {
+   top: 98px;
  }
  
- .header__menu_container {
+ .header__submenu_container {
    display: flex;
    flex-wrap: wrap;
    justify-content: space-around;
    align-items: center;
  }
- .header__menu_item {
+ .header__submenu_item {
    display: flex;
    flex-direction: column;
  }
- .header__menu_title {
+ .header__submenu_title {
    font-size: 30px;
  }
- .header__menu_link {
+ .header__submenu_link {
  }
