@@ -1,0 +1,31 @@
+.header__restaurants_menu {
+   position: fixed;
+   transition: all 0.3s ease;
+   color: black;
+   border: 2px solid white;
+   border-radius: 10px;
+   background-color: #fff;
+   top: 70px;
+   cursor: text;
+}
+
+.header__restaurants_list {
+   display: flex;
+   flex-direction: column;
+}
+
+.header__contacts_menu {
+   position: fixed;
+   transition: all 0.3s ease;
+   color: black;
+   border: 2px solid white;
+   border-radius: 10px;
+   background-color: #fff;
+   top: 70px;
+   cursor: text;
+}
+
+.header__contacts_list {
+   display: flex;
+   flex-direction: column;
+}

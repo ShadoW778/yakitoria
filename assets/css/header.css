@@ -1,5 +1,5 @@
 @import url('~/assets/css/components/_header-menu.css');
-@import url('~/assets/css/components/_header-restaurants-menu.css');
+@import url('~/assets/css/components/_header-contacts-menu.css');
 
 .wrapper {
   display: grid;
@@ -69,6 +69,10 @@
    display: flex;
    align-items: center; 
 }
+
+.header__restaurants {
+  position: relative;
+} 
 
 .header__logo {
   max-width: 60px;
