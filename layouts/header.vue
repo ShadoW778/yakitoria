@@ -6,7 +6,15 @@
           <menu-btn></menu-btn>
           <ul class="header__contacts">
             <li class="header__restaurants header__contacts_item">
-              <span>Рестораны <fa icon="caret-down"></fa></span>
+              <span @click="isRestaurantsChecking">Рестораны <fa icon="caret-down"></fa></span>
+              <div class="header__restaurants_menu" v-if="isRestaurants">
+                <h3 class="header__restaurants_title">Наши Рестораны</h3>
+                <ul class="header__restaurants_list">
+                  <li class="header__restaurants_rest">Улица Козака, 3</li>
+                  <li class="header__restaurants_rest">Проспект Бубки, 9А</li>
+                  <li class="header__restaurants_rest">Бульвар Каштанский, 12</li>
+                </ul>
+              </div>
             </li>
             <li class="header__contacts header__contacts_item">
               <span>Контакты <fa icon="caret-down"></fa></span>
@@ -42,6 +50,16 @@ import menuBtn from "../components/menu.vue";
 import mainMenu from "../components/main-menu.vue";
 export default {
   name: "headerComp",
+  data() {
+    return {
+      isRestaurants: false
+    }
+  },
+  methods: {
+    isRestaurantsChecking() {
+      this.isRestaurants = this.isRestaurants ? false : true
+    }
+  },
   components: {
     menuBtn,
     mainMenu

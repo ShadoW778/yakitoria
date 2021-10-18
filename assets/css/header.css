@@ -1,4 +1,5 @@
 @import url('~/assets/css/components/_header-menu.css');
+@import url('~/assets/css/components/_header-restaurants-menu.css');
 
 .wrapper {
   display: grid;
@@ -38,7 +39,7 @@
   transition: all 0.2s ease;
 }
 
-.header__contacts_item:hover {
+.header__contacts_item > span:hover {
   color: gray;
 }
 
