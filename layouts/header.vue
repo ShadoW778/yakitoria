@@ -1,6 +1,7 @@
 <template>
   <div class="wrapper">
-    <header class="header">
+    <div class="content" v-show="isOpened">
+      <header class="header">
       <div class="header__wrapper">
         <nav class="header__nav">
           <menu-btn></menu-btn>
@@ -29,40 +30,46 @@
                   <li class="header__contacts_contact">di759026@gmail.com</li>
                 </ul>
               </div>
-            </li>
-            <li class="header__getItem header__contacts_item">
-              <span>Заберу сам</span>
-            </li>
-          </ul>
-          <div class="header__title">
-            <nuxt-link class="header__link" to="/test">
-              Honolulu
-              <img class="header__logo" src="../assets/img/sunset.jpg" alt="" />
-            </nuxt-link>
-          </div>
-          <div class="header__management">
-            <div class="header__in">
-              <span><fa icon="sign-in-alt"></fa> Войти</span>
-            </div>
+              </li>
+             <li class="header__getItem header__contacts_item">
+                <span>Заберу сам</span>
+              </li>
+            </ul>
+            <div class="header__title">
+              <nuxt-link class="header__link" to="/test">
+                Honolulu
+                <img class="header__logo" src="../assets/img/sunset.jpg" alt="" />
+              </nuxt-link>
+           </div>
+            <div class="header__management">
+             <div class="header__in">
+               <span><fa icon="sign-in-alt"></fa> Войти</span>
+              </div>
             <div class="header__cart">
-              <span><fa icon="shopping-basket"></fa> Корзина</span>
+                <span><fa icon="shopping-basket"></fa> Корзина</span>
+              </div>
             </div>
-          </div>
-        </nav>
-        <main-menu></main-menu>
-      </div>
-    </header>
-    <Nuxt></Nuxt>
+         </nav>
+         <main-menu></main-menu>
+        </div>
+      </header>
+      <Nuxt></Nuxt>
+    </div>
+    <div class="preloader" v-show="!isOpened">
+      <h1>HI</h1>
+    </div>
   </div>
 </template>
 
 <script>
 import menuBtn from "../components/menu.vue";
 import mainMenu from "../components/main-menu.vue";
+
 export default {
   name: "headerComp",
   data() {
     return {
+      isOpened: false,
       isRestaurants: false,
       isContacts: false,
       caretRest: "caret-down",
@@ -98,6 +105,13 @@ export default {
   components: {
     menuBtn,
     mainMenu
+  },
+  mounted() {
+    window.addEventListener('load', function() {
+      let helloScript = document.createElement('script')
+      helloScript.setAttribute('src', '~/assets/js/hello.js')
+      document.head.appendChild(helloScript)
+    }) 
   }
 };
 </script>
