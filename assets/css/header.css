@@ -1,5 +1,5 @@
-@import url('~/assets/css/components/_header-menu.css');
-@import url('~/assets/css/components/_header-contacts-menu.css');
+@import url("~/assets/css/components/_header-menu.css");
+@import url("~/assets/css/components/_header-contacts-menu.css");
 
 .wrapper {
   display: grid;
@@ -8,6 +8,7 @@
     "header"
     "main"
     "footer";
+  z-index: 9999;
 }
 
 .header {
@@ -16,6 +17,11 @@
   background-color: black;
   display: block;
   color: white;
+  z-index: 1000;
+}
+
+.header__wrapper {
+  z-index: 1000;
 }
 
 .header__nav {
@@ -45,8 +51,8 @@
 }
 
 .header__contacts_item:last-child:hover {
-   color: inherit;
-   transform: scale(1.1);
+  color: inherit;
+  transform: scale(1.1);
 }
 
 .header__getItem {
@@ -67,13 +73,13 @@
 }
 
 .header__link {
-   display: flex;
-   align-items: center; 
+  display: flex;
+  align-items: center;
 }
 
 .header__restaurants {
   position: relative;
-} 
+}
 
 .header__logo {
   max-width: 60px;
@@ -93,6 +99,6 @@
 }
 
 .header__management div:hover {
-   color: red;
-   transform: scale(1.05);
+  color: red;
+  transform: scale(1.05);
 }

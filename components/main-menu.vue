@@ -42,5 +42,7 @@ export default {
 </script>
 
 <style>
-
+.header__submenu {
+  background-color: rgb(185, 171, 171);
+}
 </style>

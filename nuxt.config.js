@@ -21,7 +21,7 @@ export default {
       { rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' }
     ]
   },
-
+  loading: "~/components/loaders/mainLoader.vue",
   /*
   ** Global CSS
   */
