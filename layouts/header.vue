@@ -56,6 +56,15 @@
         <main-menu></main-menu>
       </div>
     </header>
+    <aside class="aside">
+      <div class="aside__wrapper">
+        <ul class="aside__list">
+          <li class="aside__list_item" v-for="item in names" :key="item._id">
+            <p>{{ item.name }}</p>
+          </li>
+        </ul>
+      </div>
+    </aside>
     <Nuxt></Nuxt>
   </div>
 </template>
@@ -97,6 +106,11 @@ export default {
       } else {
         this.caretCont = "caret-down";
       }
+    }
+  },
+  computed: {
+    names() {
+      // 
     }
   },
   components: {

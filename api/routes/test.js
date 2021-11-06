@@ -10,4 +10,6 @@ router.use('/test', (req, res) => {
 
 router.get('/getMenu', testController.getMenu)
 
+router.get('/getAsideMenu', testController.getAsideMenu)
+
 module.exports = router
